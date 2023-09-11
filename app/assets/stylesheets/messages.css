@@ -116,11 +116,10 @@
   padding: 20px 40px;
   display: flex;
 }
-
 .form-input {
   background-color: white;
-  display: flex;
   width: 100%;
+  display:flex;
 }
 
 .form-message {
@@ -141,7 +140,8 @@
 }
 
 .form-image {
-  font-size: 12px;
+  /* font-size: 12px; */
+  
   background-color: lightblue;
   color: white;
   padding: 12px;
