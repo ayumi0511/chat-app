@@ -12,6 +12,7 @@ module ChatApp
     config.load_defaults 7.0
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
+    config.active_storage.variant_processor = :mini_magick
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -20,5 +21,11 @@ module ChatApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
