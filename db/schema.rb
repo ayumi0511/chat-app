@@ -10,9 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
-ActiveRecord::Schema[7.0].define(version: 2023_09_10_122014) do
-=======
 ActiveRecord::Schema[7.0].define(version: 2023_09_11_071926) do
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -42,7 +39,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_11_071926) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
->>>>>>> Stashed changes
   create_table "messages", charset: "utf8", force: :cascade do |t|
     t.string "content"
     t.bigint "room_id", null: false
@@ -81,11 +77,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_11_071926) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-<<<<<<< Updated upstream
-=======
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
->>>>>>> Stashed changes
   add_foreign_key "messages", "rooms"
   add_foreign_key "messages", "users"
   add_foreign_key "room_users", "rooms"
